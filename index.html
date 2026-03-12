@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Namma Nest Interiors | Premium Home Design South Bangalore</title>
+    <meta name="description" content="Affordable luxury interior design in Chandapura, Anekal & Electronic City. Specialized in Modular Kitchens, Wardrobes, and Pooja Units.">
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -79,26 +82,39 @@
     <section id="quote" class="section">
         <div class="form-container">
             <h2 class="center-title">Get a Free Estimate</h2>
-            <form name="namma-nest-leads" method="POST" data-netlify="true">
+            
+            <form name="namma-nest-leads" method="POST" data-netlify="true" action="/success.html">
+                
+                <input type="hidden" name="form-name" value="namma-nest-leads" />
+
                 <div class="form-grid">
-                    <div class="field"><label>Name</label><input type="text" name="name" required></div>
-                    <div class="field"><label>WhatsApp</label><input type="tel" name="phone" required></div>
-                    <div class="field full"><label>Email Address</label><input type="email" name="email" required></div>
+                    <div class="field">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="field">
+                        <label>WhatsApp</label>
+                        <input type="tel" name="phone" placeholder="91XXXXXXXXXX" required>
+                    </div>
+                    <div class="field full">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="email@example.com" required>
+                    </div>
                     <div class="field">
                         <label>Location</label>
                         <select name="loc">
-                            <option>Chandapura</option>
-                            <option>Electronic City</option>
-                            <option>Anekal</option>
-                            <option>Other Location</option>
+                            <option value="Chandapura">Chandapura</option>
+                            <option value="Electronic City">Electronic City</option>
+                            <option value="Anekal">Anekal</option>
+                            <option value="Other">Other Location</option>
                         </select>
                     </div>
                     <div class="field">
                         <label>Budget</label>
                         <select name="budget">
-                            <option>3L - 8L</option>
-                            <option>8L - 15L</option>
-                            <option>Above 15L</option>
+                            <option value="3L-8L">3L - 8L</option>
+                            <option value="8L-15L">8L - 15L</option>
+                            <option value="Above-15L">Above 15L</option>
                         </select>
                     </div>
                 </div>
